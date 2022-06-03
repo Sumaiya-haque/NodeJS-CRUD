@@ -7,6 +7,11 @@ const student = require('../models/student');
 const Student = require('../models/student');
 
 /*
+router.get('/, (req,res,next) => {
+  res.status(201).json({
+    message: "Get Request"
+  })
+})
 router.post('/', (req, res, next) => {
     res.status(200).json({
         message: "Post Request"
