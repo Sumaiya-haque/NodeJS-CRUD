@@ -67,7 +67,7 @@ router.post('/signin',(req,res,next)=>{
               {
                   // for taking process.env.JWT_KEY as a string we use `${process.env.JWT_KEY}`
                  const token = jwt.sign({id: users._id,name:users.name,email:users.email},`${process.env.JWT_KEY}`,{           //passing the result with jWT token here's how to assign it process.env.JWT... is like process.env.MON_PASS
-                                                                                          // as a pass we can use any part of user here we used id,name,email
+                                                                        // as a pass we can use any part of user here we used id,name,email
                      expiresIn : 3600
                  });
                  
