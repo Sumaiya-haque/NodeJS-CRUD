@@ -40,7 +40,8 @@ router.post('/signup',(req,res,next)=>{
    })
    .catch(err=>res.status(500).json(err))
 
-})  // signin
+}) 
+ // signin
 
 router.post('/signin',(req,res,next)=>{
  Users.findOne({email:req.body.email})                                           // finding the requested email by comparing with the database existed email

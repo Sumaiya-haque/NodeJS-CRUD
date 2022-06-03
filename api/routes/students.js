@@ -1,15 +1,18 @@
 const express = require('express'); //improted express package
 const router = express.Router(); //using built-in-function Router in express package
 const mongoose = require('mongoose'); //importing mongoose
+
 const student = require('../models/student');
 
 const Student = require('../models/student');
 
-/*router.get('/', (req, res, next) => {
+/*
+router.post('/', (req, res, next) => {
     res.status(200).json({
-        message: "Get Request"
+        message: "Post Request"
     })
-})*/
+})
+*/
 //How to get request 
 router.get('/',(req,res,next) => {
     Student.find()  //built in function to find the values in Student 'query'
